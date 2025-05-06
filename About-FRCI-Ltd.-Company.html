@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - FRCI Ltd.</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0056b3',secondary:'#ff6b00'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=professional%2520corporate%2520office%2520environment%2520with%2520blue%2520color%2520scheme%252C%2520modern%2520IT%2520company%2520headquarters%2520with%2520glass%2520walls%2520and%2520open%2520workspace%252C%2520people%2520working%2520on%2520computers%252C%2520clean%2520and%2520professional%2520atmosphere%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=1920&height=800&seq=10&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.timeline-item:not(:last-child)::after {
+content: '';
+position: absolute;
+top: 24px;
+bottom: -24px;
+left: 20px;
+width: 2px;
+background-color: #e5e7eb;
+}
+.timeline-dot {
+position: relative;
+z-index: 10;
+}
+.value-card:hover {
+transform: translateY(-8px);
+}
+.team-card:hover {
+transform: translateY(-8px);
+}
+.testimonial-card {
+transition: all 0.3s ease;
+}
+.testimonial-card:hover {
+transform: translateY(-5px);
+}
+input:focus, textarea:focus {
+outline: none;
+border-color: #0056b3;
+box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.2);
+}
+.achievement-card:hover {
+transform: translateY(-5px);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<a href="#" class="flex items-center space-x-2">
+<span class="text-3xl font-['Pacifico'] text-primary">logo</span>
+</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/608eb3f5-d579-4254-89af-57e2b37fd318" data-readdy="true" class="text-gray-800 hover:text-primary font-medium transition-colors">Home</a>
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="text-primary font-medium transition-colors border-b-2 border-primary">About Us</a>
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Services</a>
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Solutions</a>
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/14967203-21ea-4337-8f5b-1612e7ebc585" data-readdy="true" class="text-gray-800 hover:text-primary font-medium transition-colors">Blog</a>
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="hidden md:flex items-center justify-center px-4 py-2 bg-primary text-white !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Get in Touch
+</button>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section relative">
+<div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
+<div class="container mx-auto px-4 py-24 md:py-32 relative">
+<div class="max-w-2xl">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">About FRCI Ltd.</h1>
+<p class="text-xl md:text-2xl text-gray-700 mb-6">Your Trusted IT Partner Since 1989</p>
+<p class="text-lg text-gray-600 mb-8">For over three decades, we've been empowering Mauritian businesses with innovative IT solutions and exceptional service. Our journey is defined by our commitment to excellence, integrity, and continuous innovation.</p>
+<div class="flex flex-wrap gap-6">
+<div class="bg-white/90 p-4 rounded-lg shadow-lg flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-history-line ri-lg text-primary"></i>
+</div>
+<div>
+<div class="text-2xl font-bold text-primary">30+</div>
+<div class="text-gray-600">Years of Excellence</div>
+</div>
+</div>
+<div class="bg-white/90 p-4 rounded-lg shadow-lg flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-team-line ri-lg text-primary"></i>
+</div>
+<div>
+<div class="text-2xl font-bold text-primary">120+</div>
+<div class="text-gray-600">IT Professionals</div>
+</div>
+</div>
+<div class="bg-white/90 p-4 rounded-lg shadow-lg flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-customer-service-2-line ri-lg text-primary"></i>
+</div>
+<div>
+<div class="text-2xl font-bold text-primary">500+</div>
+<div class="text-gray-600">Satisfied Clients</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Mission & Vision</h2>
+<p class="text-xl text-gray-600">Driving digital transformation and empowering businesses across Mauritius with innovative IT solutions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-blue-50 p-8 rounded-xl shadow-md">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-md">
+<i class="ri-focus-3-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+<p class="text-gray-700 mb-4">To provide innovative, reliable, and secure IT solutions that help our clients achieve their business objectives, drive growth, and stay competitive in an increasingly digital world.</p>
+<p class="text-gray-700">We are committed to delivering exceptional service, building long-term partnerships, and continuously evolving our expertise to meet the changing needs of our clients.</p>
+</div>
+<div class="bg-blue-50 p-8 rounded-xl shadow-md">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6 shadow-md">
+<i class="ri-eye-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+<p class="text-gray-700 mb-4">To be the leading IT solutions provider in Mauritius, recognized for our technical excellence, innovative approach, and unwavering commitment to client success.</p>
+<p class="text-gray-700">We aspire to play a pivotal role in the digital transformation of Mauritian businesses, contributing to the country's economic growth and technological advancement.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Timeline Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Journey Since 1989</h2>
+<p class="text-xl text-gray-600">Over three decades of innovation, growth, and technological excellence.</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="space-y-12">
+<!-- 1989 -->
+<div class="timeline-item relative pl-12">
+<div class="timeline-dot absolute left-0 top-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<span class="text-white font-bold">89</span>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-2">1989 - Foundation</h3>
+<p class="text-gray-700">FRCI Ltd. was founded in Port Louis, Mauritius, with a vision to provide quality IT services to local businesses. Starting with a small team of 5 IT professionals, we focused on hardware maintenance and basic IT support.</p>
+</div>
+</div>
+<!-- 1995 -->
+<div class="timeline-item relative pl-12">
+<div class="timeline-dot absolute left-0 top-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<span class="text-white font-bold">95</span>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-2">1995 - Expansion</h3>
+<p class="text-gray-700">Expanded our service offerings to include network infrastructure and software solutions. Our team grew to 25 employees, and we moved to a larger office in Cyber City to accommodate our growth.</p>
+</div>
+</div>
+<!-- 2003 -->
+<div class="timeline-item relative pl-12">
+<div class="timeline-dot absolute left-0 top-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<span class="text-white font-bold">03</span>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-2">2003 - Microsoft Partnership</h3>
+<p class="text-gray-700">Became a Microsoft Certified Partner, marking our commitment to excellence in Microsoft technologies. This partnership allowed us to offer enhanced solutions and services to our growing client base.</p>
+</div>
+</div>
+<!-- 2010 -->
+<div class="timeline-item relative pl-12">
+<div class="timeline-dot absolute left-0 top-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<span class="text-white font-bold">10</span>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-2">2010 - Cloud Revolution</h3>
+<p class="text-gray-700">Embraced the cloud revolution by launching our dedicated cloud services division. We became one of the first IT companies in Mauritius to offer comprehensive cloud migration and management services.</p>
+</div>
+</div>
+<!-- 2015 -->
+<div class="timeline-item relative pl-12">
+<div class="timeline-dot absolute left-0 top-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<span class="text-white font-bold">15</span>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-2">2015 - Microsoft Gold Partner</h3>
+<p class="text-gray-700">Achieved Microsoft Gold Partner status, recognizing our expertise and commitment to excellence in Microsoft solutions. This milestone reflected our team's dedication to continuous learning and professional development.</p>
+</div>
+</div>
+<!-- 2020 -->
+<div class="timeline-item relative pl-12">
+<div class="timeline-dot absolute left-0 top-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<span class="text-white font-bold">20</span>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-2">2020 - Digital Transformation</h3>
+<p class="text-gray-700">Launched our Digital Transformation practice to help businesses navigate the challenges of the pandemic. Our remote work solutions and digital collaboration tools helped many Mauritian companies maintain operations during this challenging period.</p>
+</div>
+</div>
+<!-- 2025 -->
+<div class="timeline-item relative pl-12">
+<div class="timeline-dot absolute left-0 top-0 w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+<span class="text-white font-bold">25</span>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-2">2025 - Present Day</h3>
+<p class="text-gray-700">Today, FRCI Ltd. stands as a leading IT solutions provider in Mauritius with over 120 IT professionals, serving 500+ clients across various industries. We continue to innovate and expand our service offerings to meet the evolving needs of our clients.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Core Values</h2>
+<p class="text-xl text-gray-600">The principles that guide our actions, decisions, and relationships.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Value 1 -->
+<div class="value-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-award-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Excellence</h3>
+<p class="text-gray-600">We are committed to delivering excellence in everything we do. From the solutions we design to the support we provide, we strive for the highest standards of quality and performance.</p>
+</div>
+<!-- Value 2 -->
+<div class="value-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-heart-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Integrity</h3>
+<p class="text-gray-600">We conduct our business with honesty, transparency, and ethical standards. We build trust through responsible actions and honest relationships with our clients, partners, and employees.</p>
+</div>
+<!-- Value 3 -->
+<div class="value-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-team-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Collaboration</h3>
+<p class="text-gray-600">We believe in the power of teamwork and partnership. We work closely with our clients and within our teams to achieve common goals and deliver exceptional results.</p>
+</div>
+<!-- Value 4 -->
+<div class="value-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-lightbulb-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Innovation</h3>
+<p class="text-gray-600">We embrace change and continuously seek innovative solutions to complex challenges. We stay at the forefront of technology to provide our clients with cutting-edge solutions.</p>
+</div>
+<!-- Value 5 -->
+<div class="value-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-customer-service-2-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Client Focus</h3>
+<p class="text-gray-600">Our clients are at the center of everything we do. We are dedicated to understanding their needs, exceeding their expectations, and building long-term relationships based on trust and mutual success.</p>
+</div>
+<!-- Value 6 -->
+<div class="value-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-user-follow-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Responsibility</h3>
+<p class="text-gray-600">We take responsibility for our actions and decisions. We are committed to sustainable business practices and contributing positively to our community and environment.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Team Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Leadership Team</h2>
+<p class="text-xl text-gray-600">Meet the experienced professionals guiding our company's vision and strategy.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Team Member 1 -->
+<div class="team-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%2520middle-aged%2520African%2520businessman%2520in%2520suit%2520with%2520confident%2520expression%252C%2520corporate%2520headshot%2520with%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=400&height=400&seq=11&orientation=squarish" alt="Robert Dupont" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-1">Robert Dupont</h3>
+<p class="text-primary font-medium mb-3">Chief Executive Officer</p>
+<p class="text-gray-600 mb-4">With over 25 years of experience in the IT industry, Robert has led FRCI Ltd. through significant growth and transformation since 2005. His visionary leadership and strategic thinking have been instrumental in establishing the company as a leading IT solutions provider in Mauritius.</p>
+<div class="flex items-center">
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors mr-2">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="team-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%2520Indian%2520woman%2520in%2520business%2520attire%2520with%2520confident%2520expression%252C%2520corporate%2520headshot%2520with%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=400&height=400&seq=12&orientation=squarish" alt="Priya Ramchurn" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-1">Priya Ramchurn</h3>
+<p class="text-primary font-medium mb-3">Chief Technology Officer</p>
+<p class="text-gray-600 mb-4">Priya brings 18 years of technical expertise to FRCI Ltd. She oversees all technological aspects of the company, from infrastructure to software development. Her deep knowledge of Microsoft technologies has been crucial in maintaining our Microsoft Gold Partner status.</p>
+<div class="flex items-center">
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors mr-2">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="team-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%2520Caucasian%2520man%2520in%2520business%2520attire%2520with%2520friendly%2520expression%252C%2520corporate%2520headshot%2520with%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=400&height=400&seq=13&orientation=squarish" alt="Jean-Philippe Martin" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-1">Jean-Philippe Martin</h3>
+<p class="text-primary font-medium mb-3">Chief Financial Officer</p>
+<p class="text-gray-600 mb-4">Jean-Philippe has been with FRCI Ltd. for 12 years, managing the company's financial operations and strategy. His financial acumen and business insights have contributed significantly to our sustainable growth and profitability.</p>
+<div class="flex items-center">
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors mr-2">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="team-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%2520Chinese%2520woman%2520in%2520business%2520attire%2520with%2520confident%2520expression%252C%2520corporate%2520headshot%2520with%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=400&height=400&seq=14&orientation=squarish" alt="Michelle Wong" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-1">Michelle Wong</h3>
+<p class="text-primary font-medium mb-3">Chief Operations Officer</p>
+<p class="text-gray-600 mb-4">Michelle oversees the day-to-day operations of FRCI Ltd., ensuring efficient service delivery and client satisfaction. With 15 years of experience in IT service management, she has implemented robust processes that have significantly improved our operational efficiency.</p>
+<div class="flex items-center">
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors mr-2">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Team Member 5 -->
+<div class="team-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%2520African%2520woman%2520in%2520business%2520attire%2520with%2520friendly%2520expression%252C%2520corporate%2520headshot%2520with%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=400&height=400&seq=15&orientation=squarish" alt="Sarah Lam" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-1">Sarah Lam</h3>
+<p class="text-primary font-medium mb-3">Head of Client Relations</p>
+<p class="text-gray-600 mb-4">Sarah leads our client relations team, focusing on building and maintaining strong relationships with our clients. Her customer-centric approach and deep understanding of client needs have been key to our high client retention rate.</p>
+<div class="flex items-center">
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors mr-2">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- Team Member 6 -->
+<div class="team-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+<img src="https://readdy.ai/api/search-image?query=professional%2520Indian%2520man%2520in%2520business%2520attire%2520with%2520confident%2520expression%252C%2520corporate%2520headshot%2520with%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=400&height=400&seq=16&orientation=squarish" alt="Vikram Patel" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 mb-1">Vikram Patel</h3>
+<p class="text-primary font-medium mb-3">Head of Innovation</p>
+<p class="text-gray-600 mb-4">Vikram leads our innovation initiatives, exploring emerging technologies and their potential applications for our clients. His forward-thinking approach ensures that FRCI Ltd. remains at the cutting edge of technological advancements.</p>
+<div class="flex items-center">
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors mr-2">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-100 text-primary hover:bg-primary hover:text-white transition-colors">
+<i class="ri-mail-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements & Certifications Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Achievements & Certifications</h2>
+<p class="text-xl text-gray-600">Recognition of our commitment to excellence and industry standards.</p>
+</div>
+<div class="mb-16">
+<div class="bg-blue-50 p-8 rounded-xl shadow-md">
+<div class="flex flex-col md:flex-row items-center">
+<div class="md:w-1/4 mb-6 md:mb-0 flex justify-center">
+<div class="w-32 h-32 flex items-center justify-center">
+<i class="ri-microsoft-fill ri-5x text-primary"></i>
+</div>
+</div>
+<div class="md:w-3/4 md:pl-8">
+<h3 class="text-2xl font-bold text-gray-900 mb-4">Microsoft Gold Partner</h3>
+<p class="text-gray-700 mb-4">As a Microsoft Gold Partner, FRCI Ltd. has demonstrated the highest level of competence and expertise in Microsoft technologies. This prestigious certification recognizes our technical capabilities, successful implementations, and customer satisfaction.</p>
+<div class="flex flex-wrap gap-4">
+<span class="px-4 py-2 bg-white text-primary text-sm font-medium rounded-full">Cloud Platform</span>
+<span class="px-4 py-2 bg-white text-primary text-sm font-medium rounded-full">Application Development</span>
+<span class="px-4 py-2 bg-white text-primary text-sm font-medium rounded-full">Data Analytics</span>
+<span class="px-4 py-2 bg-white text-primary text-sm font-medium rounded-full">Security</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Achievement 1 -->
+<div class="achievement-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-award-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Best IT Service Provider 2024</h3>
+<p class="text-gray-600 mb-4">Awarded by the Mauritius Chamber of Commerce for excellence in IT service delivery and customer satisfaction.</p>
+<div class="flex items-center text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>January 2024</span>
+</div>
+</div>
+<!-- Achievement 2 -->
+<div class="achievement-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-shield-check-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">ISO 27001 Certification</h3>
+<p class="text-gray-600 mb-4">Internationally recognized standard for information security management, demonstrating our commitment to data protection.</p>
+<div class="flex items-center text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>Renewed March 2025</span>
+</div>
+</div>
+<!-- Achievement 3 -->
+<div class="achievement-card bg-white p-6 rounded-lg shadow-md border border-gray-100 transition-all duration-300">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-customer-service-2-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Customer Excellence Award</h3>
+<p class="text-gray-600 mb-4">Recognized for outstanding customer service and support by the African IT Excellence Awards.</p>
+<div class="flex items-center text-gray-500">
+<i class="ri-calendar-line mr-2"></i>
+<span>November 2023</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Office Locations Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Offices in Mauritius</h2>
+<p class="text-xl text-gray-600">Strategically located to serve our clients across the island.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden h-96 mb-8">
+<img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="Office Locations" class="w-full h-full object-cover">
+</div>
+</div>
+<div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Mauritius Headquarters -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+<i class="ri-building-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">Mauritius Headquarters</h3>
+<p class="text-gray-600 mb-4">The Hub, Cyber City<br>Ebène, Mauritius</p>
+<div class="space-y-2 text-gray-600">
+<div class="flex items-center">
+<i class="ri-phone-line w-5 mr-2 text-primary"></i>
+<span>+230 403 5500</span>
+</div>
+<div class="flex items-center">
+<i class="ri-mail-line w-5 mr-2 text-primary"></i>
+<span>mauritius@frci.net</span>
+</div>
+<div class="flex items-center">
+<i class="ri-time-line w-5 mr-2 text-primary"></i>
+<span>Mon-Fri: 8:30 AM - 5:30 PM</span>
+</div>
+</div>
+</div>
+<!-- La Réunion Office -->
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+<i class="ri-building-2-line text-primary ri-lg"></i>
+</div>
+<h3 class="text-lg font-semibold text-gray-900 mb-2">La Réunion Office</h3>
+<p class="text-gray-600 mb-4">14 Rue de Paris<br>Saint-Denis, La Réunion</p>
+<div class="space-y-2 text-gray-600">
+<div class="flex items-center">
+<i class="ri-phone-line w-5 mr-2 text-primary"></i>
+<span>+262 262 90 00 00</span>
+</div>
+<div class="flex items-center">
+<i class="ri-mail-line w-5 mr-2 text-primary"></i>
+<span>reunion@frci.net</span>
+</div>
+<div class="flex items-center">
+<i class="ri-time-line w-5 mr-2 text-primary"></i>
+<span>Mon-Fri: 8:30 AM - 5:30 PM</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Company Culture Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Company Culture</h2>
+<p class="text-xl text-gray-600">At FRCI Ltd., we foster a culture of innovation, collaboration, and continuous learning.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+<div>
+<img src="https://readdy.ai/api/search-image?query=diverse%2520team%2520of%2520IT%2520professionals%2520collaborating%2520in%2520modern%2520office%2520environment%252C%2520multiple%2520people%2520working%2520together%2520on%2520computers%252C%2520positive%2520workplace%2520culture%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=17&orientation=landscape" alt="Company Culture" class="w-full h-full object-cover rounded-lg shadow-md">
+</div>
+<div>
+<h3 class="text-2xl font-bold text-gray-900 mb-6">What Makes Us Different</h3>
+<div class="space-y-6">
+<div class="flex">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex-shrink-0 flex items-center justify-center mr-4">
+<i class="ri-user-heart-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-2">People-Centric Approach</h4>
+<p class="text-gray-600">We believe our people are our greatest asset. We invest in their growth, well-being, and professional development, creating an environment where everyone can thrive.</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex-shrink-0 flex items-center justify-center mr-4">
+<i class="ri-book-open-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-2">Continuous Learning</h4>
+<p class="text-gray-600">In the rapidly evolving tech industry, we prioritize continuous learning and knowledge sharing. Our team members are encouraged to pursue certifications and stay updated with the latest technologies.</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex-shrink-0 flex items-center justify-center mr-4">
+<i class="ri-team-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-2">Collaborative Environment</h4>
+<p class="text-gray-600">We foster a collaborative culture where ideas are freely shared, diverse perspectives are valued, and teamwork is essential to delivering exceptional solutions for our clients.</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex-shrink-0 flex items-center justify-center mr-4">
+<i class="ri-community-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900 mb-2">Community Engagement</h4>
+<p class="text-gray-600">We are committed to giving back to our community through various initiatives, including technology education programs, environmental sustainability efforts, and support for local charities.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<img src="https://readdy.ai/api/search-image?query=IT%2520team%2520in%2520training%2520session%2520in%2520modern%2520office%252C%2520professional%2520development%2520workshop%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=300&height=200&seq=18&orientation=landscape" alt="Team Training" class="w-full h-48 object-cover rounded-lg shadow-md">
+<img src="https://readdy.ai/api/search-image?query=IT%2520company%2520team%2520building%2520activity%2520outdoors%252C%2520diverse%2520group%2520of%2520professionals%2520enjoying%2520team%2520event%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=300&height=200&seq=19&orientation=landscape" alt="Team Building" class="w-full h-48 object-cover rounded-lg shadow-md">
+<img src="https://readdy.ai/api/search-image?query=IT%2520professionals%2520celebrating%2520company%2520achievement%252C%2520office%2520party%2520with%2520diverse%2520team%2520members%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=300&height=200&seq=20&orientation=landscape" alt="Celebration" class="w-full h-48 object-cover rounded-lg shadow-md">
+<img src="https://readdy.ai/api/search-image?query=IT%2520company%2520community%2520service%2520event%252C%2520team%2520volunteering%2520for%2520charity%252C%2520corporate%2520social%2520responsibility%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=300&height=200&seq=21&orientation=landscape" alt="Community Service" class="w-full h-48 object-cover rounded-lg shadow-md">
+</div>
+</div>
+</section>
+<!-- Client Testimonials Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Our Clients Say</h2>
+<p class="text-xl text-gray-600">Hear from businesses that have transformed their operations with our solutions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center mb-6">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"FRCI Ltd. has been our trusted IT partner for over 8 years. Their Microsoft Azure migration expertise helped us modernize our infrastructure, resulting in improved performance and significant cost savings. Their team's professionalism and technical knowledge are exceptional."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-building-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900">Richard Thompson</h4>
+<p class="text-gray-500">CIO, Mauritius Commercial Bank</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center mb-6">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"The implementation of Microsoft Dynamics 365 by FRCI Ltd. transformed our business operations. Their team took the time to understand our unique requirements and delivered a solution that has streamlined our processes and improved customer service. Their ongoing support is invaluable."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-building-2-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900">Anisha Ramgoolam</h4>
+<p class="text-gray-500">Operations Director, Phoenix Beverages</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center mb-6">
+<div class="text-yellow-400 flex">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+</div>
+<p class="text-gray-600 mb-6">"When we needed to enhance our cybersecurity posture, FRCI Ltd. provided a comprehensive security assessment and implemented robust solutions that have protected our sensitive data. Their expertise in Microsoft security technologies and proactive approach give us peace of mind."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-building-4-line text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-semibold text-gray-900">David Laurent</h4>
+<p class="text-gray-500">IT Manager, Air Mauritius</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-primary">
+<div class="container mx-auto px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+<p class="text-xl text-white/90 mb-8">Partner with FRCI Ltd. for innovative IT solutions that drive growth and efficiency.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a href="#" class="px-8 py-3 bg-white text-primary text-lg font-semibold !rounded-button hover:bg-gray-100 transition-colors shadow-lg whitespace-nowrap">
+Contact Us Today
+</a>
+<a href="#" class="px-8 py-3 bg-transparent text-white text-lg font-semibold border-2 border-white !rounded-button hover:bg-white/10 transition-colors whitespace-nowrap">
+Explore Our Services
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<a href="#" class="flex items-center space-x-2 mb-6">
+<span class="text-3xl font-['Pacifico'] text-white">logo</span>
+</a>
+<p class="text-gray-400 mb-6">FRCI Ltd. has been a trusted IT partner for Mauritian businesses since 1989, providing comprehensive IT solutions and services.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-instagram-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Our Services</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">IT Infrastructure & Security</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Applications</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Transformation</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cloud Solutions</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Managed Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Professional Services</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog & News</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+<ul class="space-y-4">
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">The Hub, Cyber City<br>Ebène, Mauritius</span>
+</li>
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">+230 403 5500</span>
+</li>
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@frci.net</span>
+</li>
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-400">Mon - Fri: 9:00 AM - 5:30 PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<p class="text-gray-400">© 2025 FRCI Ltd. All rights reserved.</p>
+</div>
+<div class="flex items-center space-x-6">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Live Chat Widget -->
+<div class="fixed bottom-6 right-6 z-50">
+<button class="w-16 h-16 bg-primary rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
+<i class="ri-message-3-line ri-xl text-white"></i>
+</button>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Mobile menu toggle functionality
+const menuButton = document.querySelector('.md\\:hidden');
+const mobileMenu = document.querySelector('.md\\:flex');
+if (menuButton && mobileMenu) {
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+mobileMenu.classList.toggle('flex');
+mobileMenu.classList.toggle('flex-col');
+mobileMenu.classList.toggle('absolute');
+mobileMenu.classList.toggle('top-16');
+mobileMenu.classList.toggle('left-0');
+mobileMenu.classList.toggle('w-full');
+mobileMenu.classList.toggle('bg-white');
+mobileMenu.classList.toggle('p-4');
+mobileMenu.classList.toggle('shadow-md');
+mobileMenu.classList.toggle('z-50');
+});
+}
+});
+</script>
+</body>
+</html>

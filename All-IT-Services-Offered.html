@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Services - FRCI Ltd.</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0056b3',secondary:'#ff6b00'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+    font-family: 'Inter', sans-serif;
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 86, 179, 0.1);
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.2);
+}
+.filter-button.active {
+    background-color: #0056b3;
+    color: white;
+}
+.category-section {
+    transition: all 0.3s ease;
+}
+.category-header {
+    cursor: pointer;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<a href="#" class="flex items-center space-x-2">
+<span class="text-3xl font-['Pacifico'] text-primary">logo</span>
+</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="text-gray-800 hover:text-primary font-medium transition-colors">Home</a>
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">About Us</a>
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="text-primary font-medium transition-colors">Services</a>
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Solutions</a>
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Blog</a>
+<a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="hidden md:flex items-center justify-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Get in Touch
+</button>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="bg-white border-b border-gray-200">
+<div class="container mx-auto px-4 py-3">
+<div class="flex items-center text-sm text-gray-600">
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="hover:text-primary transition-colors">Home</a>
+<span class="mx-2">
+<i class="ri-arrow-right-s-line"></i>
+</span>
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="hover:text-primary transition-colors">Services</a>
+<span class="mx-2">
+<i class="ri-arrow-right-s-line"></i>
+</span>
+<span class="text-primary font-medium">All Services</span>
+</div>
+</div>
+</div>
+
+<!-- Page Header -->
+<section class="bg-gradient-to-b from-white to-blue-50 py-12 md:py-20">
+<div class="container mx-auto px-4">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Our Complete Service Portfolio</h1>
+<p class="text-lg md:text-xl text-gray-600 max-w-3xl">Discover our comprehensive range of IT services designed to transform, optimize, and secure your business technology infrastructure.</p>
+</div>
+<div class="hidden md:flex">
+<a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="flex items-center text-primary hover:text-primary/80 transition-colors font-medium">
+<i class="ri-arrow-left-line mr-2"></i>
+Back to Services Overview
+</a>
+</div>
+</div>
+
+<div class="flex flex-col md:flex-row items-center justify-between bg-white p-4 rounded-lg shadow-sm mb-8">
+<div class="flex flex-wrap items-center gap-2 mb-4 md:mb-0">
+<button class="filter-button active px-4 py-2 rounded-full text-sm font-medium transition-colors whitespace-nowrap" data-category="all">
+All Services
+</button>
+<button class="filter-button px-4 py-2 bg-gray-100 rounded-full text-sm font-medium transition-colors whitespace-nowrap" data-category="microsoft">
+Microsoft Solutions
+</button>
+<button class="filter-button px-4 py-2 bg-gray-100 rounded-full text-sm font-medium transition-colors whitespace-nowrap" data-category="cloud">
+Cloud Services
+</button>
+<button class="filter-button px-4 py-2 bg-gray-100 rounded-full text-sm font-medium transition-colors whitespace-nowrap" data-category="security">
+Security
+</button>
+<button class="filter-button px-4 py-2 bg-gray-100 rounded-full text-sm font-medium transition-colors whitespace-nowrap" data-category="infrastructure">
+Infrastructure
+</button>
+<button class="filter-button px-4 py-2 bg-gray-100 rounded-full text-sm font-medium transition-colors whitespace-nowrap" data-category="digital">
+Digital Transformation
+</button>
+<button class="filter-button px-4 py-2 bg-gray-100 rounded-full text-sm font-medium transition-colors whitespace-nowrap" data-category="managed">
+Managed Services
+</button>
+</div>
+<div class="w-full md:w-auto">
+<div class="relative">
+<input type="text" placeholder="Search services..." class="w-full md:w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-full text-sm">
+<div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-400">
+<i class="ri-search-line"></i>
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex items-center gap-2 text-gray-600 mb-8">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-information-line"></i>
+</div>
+<span>Showing <span class="font-semibold">24</span> services across <span class="font-semibold">7</span> categories</span>
+</div>
+</div>
+</section>
+
+<!-- Microsoft Solutions Section -->
+<section id="microsoft-solutions" class="category-section py-10">
+<div class="container mx-auto px-4">
+<div class="category-header flex items-center bg-white p-6 rounded-lg shadow-sm mb-8">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-microsoft-fill ri-lg text-primary"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-gray-900">Microsoft Solutions</h2>
+<p class="text-gray-600">Comprehensive Microsoft technologies to power your digital workplace</p>
+</div>
+<div class="ml-auto w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-s-line ri-lg category-toggle"></i>
+</div>
+</div>
+
+<div class="category-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="microsoft">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-microsoft-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Microsoft Azure Cloud</h3>
+<p class="text-gray-600 mb-6">Leverage Azure's powerful cloud platform for scalable, secure, and reliable infrastructure. Including IaaS, PaaS, and hybrid cloud solutions.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Azure Virtual Machines & Compute</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Azure SQL & Database Services</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Azure Active Directory & Identity</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Cloud</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Microsoft</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Infrastructure</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 2 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="microsoft">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-windows-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Microsoft 365 Solutions</h3>
+<p class="text-gray-600 mb-6">Comprehensive Microsoft 365 implementation, migration, and support services to enhance collaboration and productivity.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Microsoft Teams & Collaboration</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">SharePoint & OneDrive</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Power Platform Integration</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Productivity</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Microsoft</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Collaboration</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 3 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="microsoft">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-database-2-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Dynamics 365</h3>
+<p class="text-gray-600 mb-6">Transform your business processes with Microsoft Dynamics 365 - from customer engagement to finance and operations.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Sales & Customer Service</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Finance & Operations</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Business Central for SMBs</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">CRM</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Microsoft</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Business Solutions</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 4 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="microsoft">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-shield-check-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Microsoft Security Solutions</h3>
+<p class="text-gray-600 mb-6">Comprehensive security solutions using Microsoft Defender, Sentinel, and compliance tools to protect your digital assets.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Microsoft Defender for Endpoint</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Microsoft Sentinel SIEM/SOAR</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Microsoft Compliance Manager</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Security</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Microsoft</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Compliance</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Cloud Services Section -->
+<section id="cloud-services" class="category-section py-10">
+<div class="container mx-auto px-4">
+<div class="category-header flex items-center bg-white p-6 rounded-lg shadow-sm mb-8">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-cloud-line ri-lg text-primary"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-gray-900">Cloud Services</h2>
+<p class="text-gray-600">Flexible, scalable cloud solutions for modern businesses</p>
+</div>
+<div class="ml-auto w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-s-line ri-lg category-toggle"></i>
+</div>
+</div>
+
+<div class="category-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="cloud">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-cloud-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Cloud Migration & Strategy</h3>
+<p class="text-gray-600 mb-6">End-to-end cloud migration services to help you transition from on-premises to cloud infrastructure safely and efficiently.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Cloud Readiness Assessment</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Migration Planning & Execution</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Post-Migration Optimization</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Cloud</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Migration</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Strategy</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 2 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="cloud">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-server-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Multi-Cloud Management</h3>
+<p class="text-gray-600 mb-6">Unified management of multiple cloud environments including Azure, AWS, and Google Cloud for optimal performance and cost efficiency.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Centralized Cloud Monitoring</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Cost Optimization & Management</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Cross-Cloud Security & Governance</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Multi-Cloud</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Management</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Optimization</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 3 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="cloud">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-database-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Cloud Database Services</h3>
+<p class="text-gray-600 mb-6">Modern cloud database solutions offering high performance, scalability, and reliability for all your data management needs.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">SQL & NoSQL Database Management</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Database Migration & Modernization</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">High Availability & Disaster Recovery</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Database</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Cloud</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Data Management</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 4 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="cloud">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-code-box-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Serverless Computing</h3>
+<p class="text-gray-600 mb-6">Build and deploy applications without managing infrastructure using serverless architecture for improved scalability and cost efficiency.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Function-as-a-Service (FaaS)</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Event-Driven Architecture</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Microservices Implementation</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Serverless</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Cloud</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Development</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Security Section -->
+<section id="security-services" class="category-section py-10">
+<div class="container mx-auto px-4">
+<div class="category-header flex items-center bg-white p-6 rounded-lg shadow-sm mb-8">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-shield-keyhole-line ri-lg text-primary"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-gray-900">Security Services</h2>
+<p class="text-gray-600">Comprehensive protection for your digital assets and infrastructure</p>
+</div>
+<div class="ml-auto w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-s-line ri-lg category-toggle"></i>
+</div>
+</div>
+
+<div class="category-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="security">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-shield-check-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Cybersecurity Assessment</h3>
+<p class="text-gray-600 mb-6">Comprehensive evaluation of your security posture to identify vulnerabilities and provide actionable recommendations.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Vulnerability Assessment & Penetration Testing</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Security Architecture Review</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Compliance Gap Analysis</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Security</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Assessment</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Risk Management</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 2 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="security">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-eye-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Security Operations Center (SOC)</h3>
+<p class="text-gray-600 mb-6">24/7 monitoring and response services to detect, analyze, and respond to cybersecurity incidents in real-time.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Continuous Security Monitoring</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Incident Response & Management</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Threat Intelligence Integration</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">SOC</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Security</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Monitoring</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 3 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="security">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-lock-password-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Identity & Access Management</h3>
+<p class="text-gray-600 mb-6">Secure and streamline access to your systems and data with comprehensive identity and access management solutions.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Single Sign-On (SSO) Implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Multi-Factor Authentication (MFA)</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Privileged Access Management</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">IAM</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Security</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Access Control</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<!-- Service 4 -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="security">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-file-shield-2-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Data Protection & Compliance</h3>
+<p class="text-gray-600 mb-6">Safeguard sensitive information and ensure regulatory compliance with our comprehensive data protection services.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Data Encryption & Classification</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">GDPR & PDPA Compliance</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Data Loss Prevention (DLP)</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Data Protection</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Compliance</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Security</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Infrastructure Section -->
+<section id="infrastructure-services" class="category-section py-10">
+<div class="container mx-auto px-4">
+<div class="category-header flex items-center bg-white p-6 rounded-lg shadow-sm mb-8">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-server-line ri-lg text-primary"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-gray-900">Infrastructure Services</h2>
+<p class="text-gray-600">Robust and scalable IT infrastructure solutions for your business</p>
+</div>
+<div class="ml-auto w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-s-line ri-lg category-toggle"></i>
+</div>
+</div>
+
+<div class="category-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Additional services for Infrastructure category -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="infrastructure">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-server-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Network Infrastructure</h3>
+<p class="text-gray-600 mb-6">Design, implementation, and management of secure, high-performance network infrastructure for your organization.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">LAN/WAN Design & Implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Network Security & Optimization</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">SD-WAN Solutions</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Network</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Infrastructure</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Connectivity</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="infrastructure">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-hard-drive-2-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Data Center Solutions</h3>
+<p class="text-gray-600 mb-6">Modern data center design, migration, and management services to optimize your IT infrastructure.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Data Center Design & Migration</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Virtualization & Consolidation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Disaster Recovery Planning</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Data Center</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Infrastructure</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Virtualization</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="infrastructure">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-restart-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Business Continuity</h3>
+<p class="text-gray-600 mb-6">Comprehensive business continuity and disaster recovery solutions to ensure your operations remain resilient.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Business Impact Analysis</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Disaster Recovery Planning</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Backup & Recovery Solutions</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Business Continuity</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Disaster Recovery</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Resilience</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="infrastructure">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-computer-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">End-User Computing</h3>
+<p class="text-gray-600 mb-6">Modern workplace solutions that enhance productivity, collaboration, and user experience across your organization.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Virtual Desktop Infrastructure (VDI)</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Device Management & Security</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Workspace Modernization</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">End-User Computing</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Workplace</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Productivity</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Digital Transformation Section -->
+<section id="digital-transformation" class="category-section py-10">
+<div class="container mx-auto px-4">
+<div class="category-header flex items-center bg-white p-6 rounded-lg shadow-sm mb-8">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-rocket-line ri-lg text-primary"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-gray-900">Digital Transformation</h2>
+<p class="text-gray-600">Innovative solutions to accelerate your business transformation journey</p>
+</div>
+<div class="ml-auto w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-s-line ri-lg category-toggle"></i>
+</div>
+</div>
+
+<div class="category-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Digital Transformation Services -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="digital">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-robot-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">AI & Machine Learning</h3>
+<p class="text-gray-600 mb-6">Harness the power of artificial intelligence and machine learning to drive innovation and business insights.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Predictive Analytics & Forecasting</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">AI-Powered Process Automation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Machine Learning Model Development</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">AI</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Machine Learning</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Analytics</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="digital">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-apps-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Application Modernization</h3>
+<p class="text-gray-600 mb-6">Transform legacy applications into modern, cloud-native solutions to improve agility and reduce technical debt.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Legacy Application Assessment</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Microservices Architecture</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">API-First Development</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Modernization</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Applications</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Development</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="digital">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-bar-chart-box-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Data Analytics & BI</h3>
+<p class="text-gray-600 mb-6">Turn your data into actionable insights with our comprehensive data analytics and business intelligence solutions.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Data Warehouse Implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Business Intelligence Dashboards</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Advanced Analytics & Reporting</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Analytics</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Business Intelligence</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Data</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="digital">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-device-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">IoT Solutions</h3>
+<p class="text-gray-600 mb-6">Connect, monitor, and manage your devices and assets with our Internet of Things (IoT) solutions and services.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">IoT Strategy & Implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Device Management & Monitoring</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">IoT Data Analytics</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">IoT</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Connected Devices</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Smart Solutions</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Managed Services Section -->
+<section id="managed-services" class="category-section py-10">
+<div class="container mx-auto px-4">
+<div class="category-header flex items-center bg-white p-6 rounded-lg shadow-sm mb-8">
+<div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+<i class="ri-customer-service-2-line ri-lg text-primary"></i>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-gray-900">Managed Services</h2>
+<p class="text-gray-600">Proactive IT management and support for your business operations</p>
+</div>
+<div class="ml-auto w-8 h-8 flex items-center justify-center">
+<i class="ri-arrow-down-s-line ri-lg category-toggle"></i>
+</div>
+</div>
+
+<div class="category-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Managed Services -->
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="managed">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-customer-service-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Managed IT Services</h3>
+<p class="text-gray-600 mb-6">Comprehensive IT management and support services to keep your technology running smoothly and efficiently.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">24/7 Monitoring & Support</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Proactive Maintenance</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Help Desk & Technical Support</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Managed Services</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Support</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Monitoring</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="managed">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-shield-user-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Managed Security Services</h3>
+<p class="text-gray-600 mb-6">Proactive security monitoring, management, and response services to protect your business from cyber threats.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Security Monitoring & Management</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Threat Detection & Response</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Security Patch Management</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Security</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Managed Services</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Protection</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="managed">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-cloud-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Managed Cloud Services</h3>
+<p class="text-gray-600 mb-6">End-to-end management of your cloud infrastructure to optimize performance, security, and costs.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Cloud Infrastructure Management</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Cloud Cost Optimization</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Cloud Security & Compliance</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Cloud</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Managed Services</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Optimization</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+
+<div class="service-card bg-white p-8 rounded-lg shadow-md border border-gray-100 transition-all duration-300" data-category="managed">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+<i class="ri-database-2-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-3">Managed Database Services</h3>
+<p class="text-gray-600 mb-6">Expert management of your database environments to ensure optimal performance, availability, and security.</p>
+<div class="mb-6">
+<h4 class="text-sm font-semibold text-gray-700 mb-2">Key Features:</h4>
+<ul class="space-y-2">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Database Administration & Monitoring</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Performance Tuning & Optimization</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2 text-primary">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-600 text-sm">Database Backup & Recovery</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Database</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Managed Services</span>
+<span class="px-3 py-1 bg-blue-50 text-primary text-xs rounded-full">Performance</span>
+</div>
+<a href="#" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ml-2"></i>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact CTA Section -->
+<section class="py-16 bg-gradient-to-r from-primary to-blue-700">
+<div class="container mx-auto px-4">
+<div class="md:flex items-center justify-between">
+<div class="md:w-2/3 mb-8 md:mb-0">
+<h2 class="text-3xl font-bold text-white mb-4">Need Help Selecting the Right Service?</h2>
+<p class="text-blue-100 text-lg">Our expert consultants can help you identify the perfect IT solutions for your specific business needs.</p>
+</div>
+<div class="md:w-1/3 text-center md:text-right">
+<button class="px-8 py-3 bg-white text-primary font-semibold rounded-button hover:bg-blue-50 transition-colors shadow-lg whitespace-nowrap">
+Schedule a Consultation
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Floating Compare Button -->
+<div class="fixed bottom-6 left-6 z-50 hidden" id="compare-button">
+<button class="px-6 py-3 bg-primary text-white rounded-button shadow-lg flex items-center whitespace-nowrap">
+<i class="ri-scales-3-line mr-2"></i>
+Compare Selected Services
+<span class="ml-2 bg-white text-primary w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold" id="compare-count">0</span>
+</button>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<div>
+<a href="#" class="flex items-center space-x-2 mb-6">
+<span class="text-3xl font-['Pacifico'] text-white">logo</span>
+</a>
+<p class="text-gray-400 mb-6">FRCI Ltd. has been a trusted IT partner for Mauritian businesses since 1989, providing comprehensive IT solutions and services.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+<i class="ri-instagram-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Our Services</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">IT Infrastructure & Security</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Applications</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Transformation</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cloud Solutions</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Managed Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Professional Services</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog & News</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+<ul class="space-y-4">
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">The Hub, Cyber City<br>Vacoas-Phoenix, Mauritius</span>
+</li>
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">+230 403 5500</span>
+</li>
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@frci.net</span>
+</li>
+<li class="flex">
+<div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-400">Mon - Fri: 9:00 AM - 5:30 PM</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<p class="text-gray-400">© 2025 FRCI Ltd. All rights reserved.</p>
+</div>
+<div class="flex items-center space-x-6">
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Live Chat Widget -->
+<div class="fixed bottom-6 right-6 z-50">
+<button class="w-16 h-16 bg-primary rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
+<i class="ri-message-3-line ri-xl text-white"></i>
+</button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Filter functionality
+const filterButtons = document.querySelectorAll('.filter-button');
+const serviceCards = document.querySelectorAll('.service-card');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        filterButtons.forEach(btn => btn.classList.add('bg-gray-100'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        button.classList.remove('bg-gray-100');
+        
+        const category = button.getAttribute('data-category');
+        
+        // Show/hide service cards based on category
+        if (category === 'all') {
+            serviceCards.forEach(card => {
+                card.style.display = 'block';
+            });
+        } else {
+            serviceCards.forEach(card => {
+                if (card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    });
+});
+
+// Category section toggle
+const categoryHeaders = document.querySelectorAll('.category-header');
+categoryHeaders.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector('.category-toggle');
+        
+        if (content.style.display === 'none') {
+            content.style.display = 'grid';
+            icon.classList.remove('ri-arrow-right-s-line');
+            icon.classList.add('ri-arrow-down-s-line');
+        } else {
+            content.style.display = 'none';
+            icon.classList.remove('ri-arrow-down-s-line');
+            icon.classList.add('ri-arrow-right-s-line');
+        }
+    });
+});
+
+// Search functionality
+const searchInput = document.querySelector('input[type="text"]');
+searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.toLowerCase();
+    
+    serviceCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        const description = card.querySelector('p').textContent.toLowerCase();
+        const tags = Array.from(card.querySelectorAll('.flex-wrap span')).map(span => span.textContent.toLowerCase());
+        
+        if (title.includes(searchTerm) || description.includes(searchTerm) || tags.some(tag => tag.includes(searchTerm))) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+
+// Service comparison functionality
+const compareButton = document.getElementById('compare-button');
+const compareCount = document.getElementById('compare-count');
+let selectedServices = [];
+
+serviceCards.forEach(card => {
+    const checkbox = document.createElement('div');
+    checkbox.className = 'absolute top-4 right-4 w-6 h-6 rounded-full border-2 border-gray-300 cursor-pointer service-checkbox';
+    card.style.position = 'relative';
+    card.appendChild(checkbox);
+    
+    checkbox.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const serviceName = card.querySelector('h3').textContent;
+        
+        if (checkbox.classList.contains('bg-primary')) {
+            // Remove from selected
+            checkbox.classList.remove('bg-primary');
+            checkbox.classList.remove('border-primary');
+            checkbox.innerHTML = '';
+            
+            selectedServices = selectedServices.filter(name => name !== serviceName);
+        } else {
+            // Add to selected
+            if (selectedServices.length < 4) {
+                checkbox.classList.add('bg-primary');
+                checkbox.classList.add('border-primary');
+                checkbox.innerHTML = '<i class="ri-check-line text-white"></i>';
+                
+                selectedServices.push(serviceName);
+            } else {
+                alert('You can compare up to 4 services at a time.');
+                return;
+            }
+        }
+        
+        // Update compare button
+        compareCount.textContent = selectedServices.length;
+        if (selectedServices.length > 0) {
+            compareButton.classList.remove('hidden');
+        } else {
+            compareButton.classList.add('hidden');
+        }
+    });
+});
+});
+</script>
+</body>
+</html>

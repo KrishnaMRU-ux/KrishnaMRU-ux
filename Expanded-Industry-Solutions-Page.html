@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry Solutions - FRCI Ltd.</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0056b3',secondary:'#ff6b00'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+  font-family: 'Inter', sans-serif;
+}
+.hero-section {
+  background-image: url('https://readdy.ai/api/search-image?query=professional%2520business%2520technology%2520environment%2520with%2520diverse%2520industry%2520elements%2520including%2520banking%252C%2520manufacturing%252C%2520distribution%2520and%2520public%2520sector%2520symbolism%252C%2520blue%2520gradient%2520background%2520with%2520abstract%2520digital%2520patterns%252C%2520professional%2520corporate%2520atmosphere%252C%2520high%2520quality%2520professional%2520look&width=1920&height=600&seq=10&orientation=landscape');
+  background-size: cover;
+  background-position: center;
+}
+.solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.case-study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 86, 179, 0.1);
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.2);
+}
+.industry-filter.active {
+  background-color: #0056b3;
+  color: white;
+}
+.industry-content {
+  display: none;
+}
+.industry-content.active {
+  display: block;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center space-x-2">
+        <span class="text-3xl font-['Pacifico'] text-primary">logo</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="text-gray-800 hover:text-primary font-medium transition-colors">Home</a>
+        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-gray-800 hover:text-primary font-medium transition-colors">About Us</a>
+        <a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Services</a>
+        <a href="#" class="text-primary font-semibold transition-colors">Solutions</a>
+        <a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Blog</a>
+        <a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Contact</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="hidden md:flex items-center justify-center px-4 py-2 bg-primary text-white rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+          Get in Touch
+        </button>
+        <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+          <i class="ri-menu-line ri-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="bg-gray-100 py-3">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center text-sm text-gray-600">
+        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="hover:text-primary transition-colors">Home</a>
+        <i class="ri-arrow-right-s-line mx-2"></i>
+        <span class="text-primary font-medium">Industry Solutions</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section relative">
+    <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
+    <div class="container mx-auto px-4 py-20 md:py-24 relative">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Industry-Specific Solutions</h1>
+        <p class="text-xl text-gray-700 mb-8">Tailored IT consulting and technology solutions to address the unique challenges and opportunities in your industry.</p>
+        <div class="flex flex-wrap gap-4 mb-8">
+          <div class="bg-white/80 backdrop-blur-sm px-5 py-3 rounded-lg shadow-sm border border-gray-200">
+            <span class="text-sm font-medium text-primary">30+ Years Experience</span>
+          </div>
+          <div class="bg-white/80 backdrop-blur-sm px-5 py-3 rounded-lg shadow-sm border border-gray-200">
+            <span class="text-sm font-medium text-primary">Industry-Specific Expertise</span>
+          </div>
+          <div class="bg-white/80 backdrop-blur-sm px-5 py-3 rounded-lg shadow-sm border border-gray-200">
+            <span class="text-sm font-medium text-primary">Proven Results</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry Filter Section -->
+  <section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Find Solutions for Your Industry</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Select your industry to discover how our tailored solutions can address your specific challenges and drive growth.</p>
+      </div>
+      
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <button class="industry-filter active px-6 py-3 bg-white border border-gray-300 rounded-full font-medium transition-all duration-300 hover:border-primary hover:text-primary whitespace-nowrap" data-industry="banking">
+          Banking & Finance
+        </button>
+        <button class="industry-filter px-6 py-3 bg-white border border-gray-300 rounded-full font-medium transition-all duration-300 hover:border-primary hover:text-primary whitespace-nowrap" data-industry="manufacturing">
+          Manufacturing
+        </button>
+        <button class="industry-filter px-6 py-3 bg-white border border-gray-300 rounded-full font-medium transition-all duration-300 hover:border-primary hover:text-primary whitespace-nowrap" data-industry="distribution">
+          Distribution
+        </button>
+        <button class="industry-filter px-6 py-3 bg-white border border-gray-300 rounded-full font-medium transition-all duration-300 hover:border-primary hover:text-primary whitespace-nowrap" data-industry="public">
+          Public Sector
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banking & Finance Solutions -->
+  <section id="banking-content" class="industry-content active py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-12 mb-16">
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <i class="ri-bank-line ri-lg text-primary"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900">Banking & Finance</h2>
+            </div>
+            <p class="text-gray-700 mb-6">In today's rapidly evolving financial landscape, banks and financial institutions face unique challenges including regulatory compliance, cybersecurity threats, digital transformation, and increasing customer expectations for seamless digital experiences.</p>
+            
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Challenges</h3>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Maintaining regulatory compliance with evolving standards</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Protecting sensitive financial data from cyber threats</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Modernizing legacy systems while maintaining operations</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Meeting customer expectations for digital banking experiences</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Leveraging data analytics for risk management and insights</span>
+              </li>
+            </ul>
+            
+            <div class="flex flex-wrap gap-3 mb-6">
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">ISO 27001 Compliant</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">PCI DSS Certified</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">99.99% Uptime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Banking & Finance Solutions</h3>
+            
+            <div class="space-y-6">
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-shield-check-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">Secure Banking Infrastructure</h4>
+                </div>
+                <p class="text-gray-700">Comprehensive security solutions with advanced threat protection, secure access management, and compliance monitoring to protect sensitive financial data and systems.</p>
+              </div>
+              
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-bank-card-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">Digital Banking Platforms</h4>
+                </div>
+                <p class="text-gray-700">Modern, user-friendly digital banking solutions that provide seamless customer experiences across web and mobile platforms while maintaining robust security.</p>
+              </div>
+              
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-file-list-3-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">Regulatory Compliance</h4>
+                </div>
+                <p class="text-gray-700">Automated compliance solutions that help financial institutions meet regulatory requirements while reducing manual effort and minimizing compliance risks.</p>
+              </div>
+              
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-line-chart-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">Financial Analytics</h4>
+                </div>
+                <p class="text-gray-700">Advanced data analytics solutions that provide actionable insights for risk management, fraud detection, customer behavior analysis, and business intelligence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Case Studies -->
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Banking & Finance Success Stories</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div class="case-study-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+          <img src="https://readdy.ai/api/search-image?query=modern%2520banking%2520office%2520with%2520digital%2520displays%2520showing%2520financial%2520data%252C%2520professional%2520bankers%2520working%2520with%2520technology%252C%2520secure%2520banking%2520environment%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=11&orientation=landscape" alt="National Bank of Mauritius" class="w-full h-48 object-cover object-top">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <span class="text-sm text-gray-500">Case Study</span>
+              <span class="mx-2 text-gray-300">•</span>
+              <span class="text-sm text-primary">Digital Transformation</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-3">National Bank of Mauritius: Digital Transformation</h4>
+            <p class="text-gray-600 mb-4">Helped a leading Mauritian bank modernize its core banking systems and launch a comprehensive digital banking platform.</p>
+            <div class="mb-4">
+              <div class="flex items-center mb-2">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">68% increase in digital transactions</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">42% reduction in operational costs</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">99.99% system uptime achieved</span>
+              </div>
+            </div>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Read Full Case Study
+              <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="case-study-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+          <img src="https://readdy.ai/api/search-image?query=cybersecurity%2520operations%2520center%2520with%2520multiple%2520screens%2520monitoring%2520financial%2520data%252C%2520security%2520professionals%2520working%252C%2520secure%2520environment%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=12&orientation=landscape" alt="Mauritius Financial Services" class="w-full h-48 object-cover object-top">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <span class="text-sm text-gray-500">Case Study</span>
+              <span class="mx-2 text-gray-300">•</span>
+              <span class="text-sm text-primary">Cybersecurity</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-3">Mauritius Financial Services: Enhanced Security</h4>
+            <p class="text-gray-600 mb-4">Implemented comprehensive cybersecurity framework for a financial services provider to protect sensitive customer data.</p>
+            <div class="mb-4">
+              <div class="flex items-center mb-2">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">95% reduction in security incidents</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Achieved PCI DSS compliance</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">24/7 security monitoring</span>
+              </div>
+            </div>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Read Full Case Study
+              <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="case-study-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+          <img src="https://readdy.ai/api/search-image?query=financial%2520data%2520analytics%2520dashboard%2520on%2520multiple%2520screens%252C%2520business%2520analysts%2520reviewing%2520charts%2520and%2520graphs%252C%2520modern%2520office%2520environment%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=13&orientation=landscape" alt="Eastern Commercial Bank" class="w-full h-48 object-cover object-top">
+          <div class="p-6">
+            <div class="flex items-center mb-4">
+              <span class="text-sm text-gray-500">Case Study</span>
+              <span class="mx-2 text-gray-300">•</span>
+              <span class="text-sm text-primary">Data Analytics</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-3">Eastern Commercial Bank: Data-Driven Insights</h4>
+            <p class="text-gray-600 mb-4">Developed advanced analytics platform to help a commercial bank leverage customer data for improved decision-making.</p>
+            <div class="mb-4">
+              <div class="flex items-center mb-2">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">32% increase in cross-selling success</span>
+              </div>
+              <div class="flex items-center mb-2">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">28% reduction in fraud losses</span>
+              </div>
+              <div class="flex items-center">
+                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                  <i class="ri-arrow-right-circle-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Improved customer segmentation</span>
+              </div>
+            </div>
+            <a href="#" class="text-primary font-medium flex items-center">
+              Read Full Case Study
+              <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Testimonial -->
+      <div class="bg-white p-8 rounded-lg shadow-md mb-16">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="md:w-1/4 flex justify-center">
+            <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-primary">
+              <img src="https://readdy.ai/api/search-image?query=professional%2520middle-aged%2520African%2520businessman%2520in%2520formal%2520suit%252C%2520confident%2520expression%252C%2520executive%2520portrait%252C%2520high%2520quality%2520professional%2520headshot%252C%2520neutral%2520background&width=200&height=200&seq=14&orientation=squarish" alt="James Mwangi" class="w-full h-full object-cover object-top">
+            </div>
+          </div>
+          <div class="md:w-3/4">
+            <div class="mb-4">
+              <i class="ri-double-quotes-l text-4xl text-primary/20"></i>
+            </div>
+            <p class="text-gray-700 text-lg italic mb-6">FRCI's banking solutions have been transformative for our institution. Their deep understanding of the financial sector's unique challenges allowed them to implement systems that not only enhanced our security posture but also improved our customer experience significantly. The digital banking platform they developed has received overwhelmingly positive feedback from our customers.</p>
+            <div>
+              <h4 class="text-lg font-semibold text-gray-900">James Mwangi</h4>
+              <p class="text-gray-600">CIO, National Bank of Mauritius</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Technology Stack -->
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Banking & Finance Technology Stack</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+            <i class="ri-microsoft-fill ri-2x text-primary"></i>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">Microsoft Azure</h4>
+          <p class="text-gray-600">Secure cloud infrastructure with compliance certifications</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+            <i class="ri-database-2-line ri-2x text-primary"></i>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">SQL Server</h4>
+          <p class="text-gray-600">Enterprise-grade database with advanced security</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+            <i class="ri-shield-keyhole-line ri-2x text-primary"></i>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">Microsoft Defender</h4>
+          <p class="text-gray-600">Advanced threat protection for financial systems</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100 flex flex-col items-center text-center">
+          <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-full mb-4">
+            <i class="ri-line-chart-line ri-2x text-primary"></i>
+          </div>
+          <h4 class="text-lg font-semibold text-gray-900 mb-2">Power BI</h4>
+          <p class="text-gray-600">Data visualization and analytics platform</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Manufacturing Solutions -->
+  <section id="manufacturing-content" class="industry-content py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-12 mb-16">
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <i class="ri-factory-line ri-lg text-primary"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900">Manufacturing</h2>
+            </div>
+            <p class="text-gray-700 mb-6">Manufacturing companies face increasing pressure to optimize production processes, maintain quality control, and integrate legacy systems with modern technology while remaining competitive in a global market.</p>
+            
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Challenges</h3>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Optimizing production efficiency and reducing downtime</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Implementing Industry 4.0 technologies effectively</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Managing supply chain complexity and visibility</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Ensuring quality control across production processes</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Integrating legacy equipment with modern systems</span>
+              </li>
+            </ul>
+            
+            <div class="flex flex-wrap gap-3 mb-6">
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">30% Efficiency Increase</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">25% Cost Reduction</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">ISO 9001 Compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Manufacturing Solutions</h3>
+            
+            <div class="space-y-6">
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-sensor-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">Industrial IoT</h4>
+                </div>
+                <p class="text-gray-700">Comprehensive IoT solutions that connect production equipment for real-time monitoring, predictive maintenance, and improved operational efficiency.</p>
+              </div>
+              
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-database-2-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">ERP Integration</h4>
+                </div>
+                <p class="text-gray-700">Seamless integration of manufacturing operations with enterprise resource planning systems to streamline processes and improve visibility.</p>
+              </div>
+              
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-truck-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">Supply Chain Optimization</h4>
+                </div>
+                <p class="text-gray-700">End-to-end supply chain solutions that provide visibility, reduce costs, and improve delivery performance through advanced analytics and automation.</p>
+              </div>
+              
+              <div class="p-6 border border-gray-200 rounded-lg hover:border-primary transition-colors">
+                <div class="flex items-center mb-4">
+                  <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mr-3">
+                    <i class="ri-tools-line text-primary"></i>
+                  </div>
+                  <h4 class="text-lg font-semibold text-gray-900">Predictive Maintenance</h4>
+                </div>
+                <p class="text-gray-700">AI-powered predictive maintenance solutions that reduce downtime by identifying potential equipment failures before they occur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Case Studies -->
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Manufacturing Success Stories</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <!-- Similar structure to Banking case studies but with manufacturing content -->
+      </div>
+      
+      <!-- Testimonial -->
+      <div class="bg-white p-8 rounded-lg shadow-md mb-16">
+        <!-- Similar structure to Banking testimonial but with manufacturing content -->
+      </div>
+      
+      <!-- Technology Stack -->
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Manufacturing Technology Stack</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+        <!-- Similar structure to Banking tech stack but with manufacturing-specific technologies -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Distribution Solutions -->
+  <section id="distribution-content" class="industry-content py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-12 mb-16">
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <i class="ri-truck-line ri-lg text-primary"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900">Distribution</h2>
+            </div>
+            <p class="text-gray-700 mb-6">Distribution companies face challenges in managing complex logistics networks, optimizing inventory levels, and providing real-time visibility while meeting customer expectations for fast and accurate delivery.</p>
+            
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Challenges</h3>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Optimizing inventory management across multiple locations</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Improving logistics efficiency and reducing costs</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Providing real-time visibility to customers and partners</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Managing complex distribution networks efficiently</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Integrating with supplier and customer systems</span>
+              </li>
+            </ul>
+            
+            <div class="flex flex-wrap gap-3 mb-6">
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">35% Logistics Cost Reduction</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">99.8% Order Accuracy</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">22% Faster Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Distribution Solutions</h3>
+            
+            <div class="space-y-6">
+              <!-- Distribution solutions similar to previous sections -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Case Studies, Testimonial, Technology Stack similar to previous sections -->
+    </div>
+  </section>
+
+  <!-- Public Sector Solutions -->
+  <section id="public-content" class="industry-content py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row gap-12 mb-16">
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <i class="ri-government-line ri-lg text-primary"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-gray-900">Public Sector</h2>
+            </div>
+            <p class="text-gray-700 mb-6">Public sector organizations face unique challenges in delivering efficient citizen services, ensuring data security and privacy, and modernizing legacy systems while operating within budget constraints.</p>
+            
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Challenges</h3>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Modernizing legacy systems while maintaining services</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Ensuring data security and citizen privacy</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Improving service delivery efficiency</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Managing complex regulatory requirements</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-2 bg-blue-100 rounded-full">
+                  <i class="ri-check-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Operating within budget constraints</span>
+              </li>
+            </ul>
+            
+            <div class="flex flex-wrap gap-3 mb-6">
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">40% Service Improvement</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">ISO 27001 Compliant</span>
+              </div>
+              <div class="bg-blue-50 px-4 py-2 rounded-full">
+                <span class="text-sm font-medium text-primary">28% Cost Savings</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2">
+          <div class="bg-white p-8 rounded-lg shadow-md h-full">
+            <h3 class="text-xl font-semibold text-gray-900 mb-6">Our Public Sector Solutions</h3>
+            
+            <div class="space-y-6">
+              <!-- Public sector solutions similar to previous sections -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Case Studies, Testimonial, Technology Stack similar to previous sections -->
+    </div>
+  </section>
+
+  <!-- Resources Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Industry Resources</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Explore our collection of industry-specific resources to help you make informed decisions about your technology investments.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <i class="ri-file-paper-2-line text-primary ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">White Papers</h3>
+            <p class="text-gray-600 mb-4">In-depth analysis and insights on industry-specific technology trends and solutions.</p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-article-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Digital Transformation in Banking</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-article-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Industry 4.0: The Future of Manufacturing</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-article-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Supply Chain Optimization Strategies</span>
+              </li>
+            </ul>
+            <a href="#" class="text-primary font-medium flex items-center">
+              View All White Papers
+              <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <i class="ri-vidicon-line text-primary ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Webinars & Videos</h3>
+            <p class="text-gray-600 mb-4">Educational webinars and video content featuring industry experts and solution demonstrations.</p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-video-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Cybersecurity Best Practices for Finance</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-video-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">IoT Implementation in Manufacturing</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-video-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Digital Government Services</span>
+              </li>
+            </ul>
+            <a href="#" class="text-primary font-medium flex items-center">
+              View All Webinars
+              <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+              <i class="ri-book-open-line text-primary ri-lg"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Case Studies</h3>
+            <p class="text-gray-600 mb-4">Detailed case studies showcasing successful implementations and measurable outcomes.</p>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-file-list-3-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">National Bank Digital Transformation</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-file-list-3-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Phoenix Manufacturing IoT Implementation</span>
+              </li>
+              <li class="flex items-start">
+                <div class="w-5 h-5 flex items-center justify-center mt-0.5 mr-2">
+                  <i class="ri-file-list-3-line text-primary"></i>
+                </div>
+                <span class="text-gray-700">Mauritius Government Digital Services</span>
+              </li>
+            </ul>
+            <a href="#" class="text-primary font-medium flex items-center">
+              View All Case Studies
+              <i class="ri-arrow-right-line ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div class="md:flex">
+          <div class="md:w-1/2 p-8 md:p-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Get Industry-Specific Solutions</h2>
+            <p class="text-gray-700 mb-8">Contact our industry experts to discuss how our tailored solutions can address your specific challenges and help you achieve your business objectives.</p>
+            
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                  <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded text-gray-700">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                  <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded text-gray-700">
+                </div>
+              </div>
+              
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company Name</label>
+                <input type="text" id="company" class="w-full px-4 py-3 border border-gray-300 rounded text-gray-700">
+              </div>
+              
+              <div>
+                <label for="industry" class="block text-sm font-medium text-gray-700 mb-2">Industry</label>
+                <div class="relative">
+                  <select id="industry" class="w-full px-4 py-3 border border-gray-300 rounded text-gray-700 appearance-none pr-8">
+                    <option value="" disabled selected>Select your industry</option>
+                    <option value="banking">Banking & Finance</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="distribution">Distribution</option>
+                    <option value="public">Public Sector</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+                    <i class="ri-arrow-down-s-line text-gray-400"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Tell us about your requirements</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded text-gray-700"></textarea>
+              </div>
+              
+              <button type="submit" class="w-full px-6 py-3 bg-primary text-white font-semibold rounded-button hover:bg-primary/90 transition-colors shadow-md whitespace-nowrap">
+                Submit Inquiry
+              </button>
+            </form>
+          </div>
+          
+          <div class="md:w-1/2 bg-gray-100 p-8 md:p-12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6">Why Choose FRCI for Your Industry?</h3>
+            
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mt-1 mr-4">
+                  <i class="ri-user-star-line text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">Industry Expertise</h4>
+                  <p class="text-gray-700">Our consultants have deep domain knowledge in your specific industry, ensuring solutions that address your unique challenges.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mt-1 mr-4">
+                  <i class="ri-settings-line text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">Tailored Solutions</h4>
+                  <p class="text-gray-700">We don't believe in one-size-fits-all. Our solutions are customized to your specific business requirements and objectives.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mt-1 mr-4">
+                  <i class="ri-line-chart-line text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">Proven Results</h4>
+                  <p class="text-gray-700">Our track record of successful implementations demonstrates our ability to deliver measurable business outcomes.</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full mt-1 mr-4">
+                  <i class="ri-customer-service-2-line text-primary"></i>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold text-gray-900 mb-2">Ongoing Support</h4>
+                  <p class="text-gray-700">We provide comprehensive support and maintenance services to ensure your solutions continue to deliver value.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <a href="#" class="flex items-center space-x-2 mb-6">
+            <span class="text-3xl font-['Pacifico'] text-white">logo</span>
+          </a>
+          <p class="text-gray-400 mb-6">FRCI Ltd. has been a trusted IT partner for Mauritian businesses since 1989, providing comprehensive IT solutions and services.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+              <i class="ri-instagram-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Our Services</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">IT Infrastructure & Security</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Applications</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Transformation</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cloud Solutions</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Managed Services</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Professional Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Industry Solutions</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Banking & Finance</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Manufacturing</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Distribution</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Public Sector</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Healthcare</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Retail</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+          <ul class="space-y-4">
+            <li class="flex">
+              <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <span class="text-gray-400">The Hub, Cyber City<br>Vacoas-Phoenix, Mauritius</span>
+            </li>
+            <li class="flex">
+              <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                <i class="ri-phone-line"></i>
+              </div>
+              <span class="text-gray-400">+230 403 5500</span>
+            </li>
+            <li class="flex">
+              <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                <i class="ri-mail-line"></i>
+              </div>
+              <span class="text-gray-400">info@frci.net</span>
+            </li>
+            <li class="flex">
+              <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                <i class="ri-time-line"></i>
+              </div>
+              <span class="text-gray-400">Mon - Fri: 9:00 AM - 5:30 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-gray-400">© 2025 FRCI Ltd. All rights reserved.</p>
+        </div>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Live Chat Widget -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <button class="w-16 h-16 bg-primary rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
+      <i class="ri-message-3-line ri-xl text-white"></i>
+    </button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Industry filter functionality
+      const industryFilters = document.querySelectorAll('.industry-filter');
+      const industryContents = document.querySelectorAll('.industry-content');
+      
+      industryFilters.forEach(filter => {
+        filter.addEventListener('click', () => {
+          // Remove active class from all filters
+          industryFilters.forEach(f => f.classList.remove('active'));
+          // Add active class to clicked filter
+          filter.classList.add('active');
+          
+          // Hide all content sections
+          industryContents.forEach(content => content.classList.remove('active'));
+          
+          // Show corresponding content
+          const industry = filter.getAttribute('data-industry');
+          document.getElementById(`${industry}-content`).classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

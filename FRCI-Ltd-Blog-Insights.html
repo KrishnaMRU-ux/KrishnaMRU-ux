@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - FRCI Ltd.</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0056b3',secondary:'#ff6b00'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+    font-family: 'Inter', sans-serif;
+}
+.hero-section {
+    background-image: url('https://readdy.ai/api/search-image?query=modern%2520digital%2520technology%2520blog%2520header%2520with%2520abstract%2520blue%2520technology%2520pattern%252C%2520clean%2520professional%2520design%252C%2520tech%2520blog%2520concept%2520with%2520soft%2520gradient%2520blue%2520background%252C%2520subtle%2520tech%2520elements%252C%25204K%2520resolution%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=1920&height=500&seq=1&orientation=landscape');
+    background-size: cover;
+    background-position: center;
+}
+.blog-card:hover {
+    transform: translateY(-5px);
+}
+.category-tab.active {
+    background-color: #0056b3;
+    color: white;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.2);
+}
+.featured-article-image {
+    height: 400px;
+}
+.blog-card-image {
+    height: 200px;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#" class="flex items-center space-x-2">
+            <span class="text-3xl font-['Pacifico'] text-primary">logo</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-8">
+            <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/608eb3f5-d579-4254-89af-57e2b37fd318" data-readdy="true" class="text-gray-800 hover:text-primary font-medium transition-colors">Home</a>
+            <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="text-gray-800 hover:text-primary font-medium transition-colors">About Us</a>
+            <a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Services</a>
+            <a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Solutions</a>
+            <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium transition-colors border-b-2 border-primary">Blog</a>
+            <a href="#" class="text-gray-800 hover:text-primary font-medium transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <button class="hidden md:flex items-center justify-center px-4 py-2 bg-primary text-white !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+                Get in Touch
+            </button>
+            <button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+                <i class="ri-menu-line ri-lg"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section relative">
+    <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
+    <div class="container mx-auto px-4 py-16 relative">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">FRCI Ltd. Blog & Insights</h1>
+            <p class="text-xl text-gray-700 mb-8">Stay updated with the latest trends, insights, and news in IT infrastructure, digital transformation, and cloud solutions.</p>
+            
+            <!-- Search Bar -->
+            <div class="relative max-w-xl mb-8">
+                <input type="text" placeholder="Search articles..." class="w-full py-3 px-12 border-none bg-white rounded-lg shadow-md text-gray-700">
+                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center text-gray-500">
+                    <i class="ri-search-line"></i>
+                </div>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="flex flex-wrap gap-2 mb-4">
+                <button class="category-tab active px-4 py-2 !rounded-full bg-primary text-white font-medium whitespace-nowrap">All Topics</button>
+                <button class="category-tab px-4 py-2 !rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 whitespace-nowrap">IT Infrastructure</button>
+                <button class="category-tab px-4 py-2 !rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 whitespace-nowrap">Digital Transformation</button>
+                <button class="category-tab px-4 py-2 !rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 whitespace-nowrap">Cloud Solutions</button>
+                <button class="category-tab px-4 py-2 !rounded-full bg-gray-200 text-gray-700 font-medium hover:bg-gray-300 whitespace-nowrap">Cybersecurity</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Article Section -->
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Featured Article</h2>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="featured-article-image">
+                    <img src="https://readdy.ai/api/search-image?query=modern%2520business%2520team%2520using%2520cloud%2520computing%2520technology%2520with%2520virtual%2520interface%252C%2520professional%2520corporate%2520environment%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look%252C%2520showing%2520cloud%2520data%2520visualization%2520and%2520digital%2520transformation&width=800&height=800&seq=2&orientation=landscape" alt="Cloud Migration Strategies" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-sm font-medium rounded-full">Cloud Solutions</span>
+                        <span class="ml-4 text-gray-500 text-sm">May 3, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 hover:text-primary transition-colors">5 Cloud Migration Strategies for Enterprise Success in 2025</h3>
+                    </a>
+                    <p class="text-gray-600 mb-6">As cloud adoption continues to accelerate, enterprises face critical decisions about how to migrate their existing infrastructure and applications. This comprehensive guide explores five proven strategies for successful cloud migration, with real-world case studies and practical implementation advice.</p>
+                    
+                    <div class="flex items-center mb-6">
+                        <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Indian%2520woman%2520in%2520business%2520attire%252C%2520confident%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=3&orientation=squarish" alt="Priya Ramchurn" class="w-12 h-12 rounded-full object-cover object-top mr-4">
+                        <div>
+                            <h4 class="text-gray-900 font-medium">Priya Ramchurn</h4>
+                            <p class="text-gray-500 text-sm">Chief Technology Officer</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="inline-flex items-center px-5 py-2.5 bg-primary text-white font-medium !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">
+                        Read Full Article
+                        <i class="ri-arrow-right-line ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Filter Section -->
+<section class="py-8 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex flex-wrap items-center gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                        <div class="relative">
+                            <button class="flex items-center justify-between w-48 px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/20">
+                                <span>All Categories</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Date Range</label>
+                        <div class="relative">
+                            <button class="flex items-center justify-between w-48 px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/20">
+                                <span>Last 6 Months</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Author</label>
+                        <div class="relative">
+                            <button class="flex items-center justify-between w-48 px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/20">
+                                <span>All Authors</span>
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Sort By</label>
+                    <div class="relative">
+                        <button class="flex items-center justify-between w-48 px-4 py-2 bg-white border border-gray-300 rounded text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary/20">
+                            <span>Most Recent</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- IT Infrastructure Articles Section -->
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold text-gray-900">IT Infrastructure</h2>
+            <a href="#" class="text-primary font-medium hover:underline flex items-center">
+                View All
+                <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=modern%2520server%2520room%2520with%2520network%2520equipment%2520and%2520blue%2520LED%2520lights%252C%2520data%2520center%2520with%2520server%2520racks%252C%2520clean%2520professional%2520corporate%2520environment%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=4&orientation=landscape" alt="Server Infrastructure" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">IT Infrastructure</span>
+                        <span class="ml-3 text-gray-500 text-xs">Apr 28, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Modernizing Server Infrastructure: On-Premise vs. Hybrid Approaches</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">Explore the pros and cons of on-premise and hybrid server infrastructure models, with guidance on making the right choice for your organization's specific needs and future growth plans.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520African%2520businessman%2520in%2520suit%252C%2520confident%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=5&orientation=squarish" alt="Robert Dupont" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Robert Dupont</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 2 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=network%2520infrastructure%2520with%2520ethernet%2520cables%2520and%2520switches%252C%2520modern%2520networking%2520equipment%2520with%2520blue%2520lights%252C%2520clean%2520professional%2520corporate%2520environment%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=6&orientation=landscape" alt="Network Infrastructure" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">IT Infrastructure</span>
+                        <span class="ml-3 text-gray-500 text-xs">Apr 21, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Optimizing Network Performance for Remote Workforces</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">Learn practical strategies for enhancing network performance, security, and reliability to support distributed teams while maintaining operational efficiency and user productivity.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Indian%2520woman%2520in%2520business%2520attire%252C%2520confident%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=3&orientation=squarish" alt="Priya Ramchurn" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Priya Ramchurn</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 3 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=IT%2520professional%2520working%2520on%2520server%2520maintenance%252C%2520data%2520center%2520technician%2520with%2520diagnostic%2520equipment%252C%2520blue%2520lighting%2520in%2520server%2520room%252C%2520clean%2520professional%2520corporate%2520environment%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=7&orientation=landscape" alt="Infrastructure Maintenance" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">IT Infrastructure</span>
+                        <span class="ml-3 text-gray-500 text-xs">Apr 15, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Proactive Infrastructure Maintenance: Preventing Downtime Before It Happens</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">Discover how predictive maintenance approaches and monitoring tools can help identify potential infrastructure issues before they impact your business operations.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Chinese%2520woman%2520in%2520business%2520attire%252C%2520confident%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=8&orientation=squarish" alt="Michelle Wong" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Michelle Wong</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Digital Transformation Articles Section -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold text-gray-900">Digital Transformation</h2>
+            <a href="#" class="text-primary font-medium hover:underline flex items-center">
+                View All
+                <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=business%2520team%2520discussing%2520digital%2520transformation%2520strategy%2520with%2520virtual%2520charts%2520and%2520graphs%252C%2520modern%2520office%2520meeting%2520with%2520technology%2520visualization%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=9&orientation=landscape" alt="Digital Transformation Strategy" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">Digital Transformation</span>
+                        <span class="ml-3 text-gray-500 text-xs">May 1, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Building a Successful Digital Transformation Roadmap for Mauritius Businesses</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">A comprehensive guide to creating an effective digital transformation strategy tailored to the unique challenges and opportunities of the Mauritian business landscape.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Indian%2520man%2520in%2520business%2520attire%252C%2520confident%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=10&orientation=squarish" alt="Vikram Patel" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Vikram Patel</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 2 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=business%2520process%2520automation%2520concept%2520with%2520workflow%2520diagram%2520on%2520screen%252C%2520digital%2520transformation%2520of%2520business%2520operations%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=11&orientation=landscape" alt="Process Automation" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">Digital Transformation</span>
+                        <span class="ml-3 text-gray-500 text-xs">Apr 23, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Business Process Automation: Where to Start and How to Scale</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">A practical guide to identifying automation opportunities, selecting the right tools, and implementing scalable solutions that drive efficiency and reduce operational costs.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Caucasian%2520man%2520in%2520business%2520attire%252C%2520friendly%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=12&orientation=squarish" alt="Jean-Philippe Martin" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Jean-Philippe Martin</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 3 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=digital%2520customer%2520experience%2520concept%2520with%2520person%2520using%2520mobile%2520app%2520and%2520omnichannel%2520marketing%2520visualization%252C%2520modern%2520user%2520interface%2520design%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=13&orientation=landscape" alt="Customer Experience" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">Digital Transformation</span>
+                        <span class="ml-3 text-gray-500 text-xs">Apr 18, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Transforming Customer Experience Through Digital Channels</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">Explore how businesses can leverage digital technologies to create seamless, personalized customer experiences across multiple touchpoints and channels.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520African%2520woman%2520in%2520business%2520attire%252C%2520friendly%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=14&orientation=squarish" alt="Sarah Lam" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Sarah Lam</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cloud Solutions Articles Section -->
+<section class="py-12 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-2xl font-bold text-gray-900">Cloud Solutions</h2>
+            <a href="#" class="text-primary font-medium hover:underline flex items-center">
+                View All
+                <i class="ri-arrow-right-line ml-1"></i>
+            </a>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Article 1 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=multi-cloud%2520strategy%2520concept%2520with%2520cloud%2520service%2520provider%2520logos%2520and%2520network%2520connections%252C%2520modern%2520cloud%2520computing%2520visualization%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=15&orientation=landscape" alt="Multi-Cloud Strategy" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">Cloud Solutions</span>
+                        <span class="ml-3 text-gray-500 text-xs">May 2, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Multi-Cloud Strategy: Benefits, Challenges, and Implementation Best Practices</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">An in-depth look at how organizations can leverage multiple cloud providers to optimize performance, reduce vendor lock-in, and enhance disaster recovery capabilities.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Indian%2520woman%2520in%2520business%2520attire%252C%2520confident%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=3&orientation=squarish" alt="Priya Ramchurn" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Priya Ramchurn</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 2 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=cloud%2520cost%2520optimization%2520with%2520financial%2520dashboard%2520and%2520cost%2520reduction%2520strategies%252C%2520cloud%2520budget%2520management%2520visualization%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=16&orientation=landscape" alt="Cloud Cost Optimization" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">Cloud Solutions</span>
+                        <span class="ml-3 text-gray-500 text-xs">Apr 25, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Cloud Cost Optimization: Strategies for Controlling Cloud Spending</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">Practical advice for monitoring and optimizing cloud costs, including resource right-sizing, reserved instances, and tools for tracking and forecasting cloud expenditure.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Caucasian%2520man%2520in%2520business%2520attire%252C%2520friendly%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=12&orientation=squarish" alt="Jean-Philippe Martin" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Jean-Philippe Martin</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Article 3 -->
+            <div class="blog-card bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300">
+                <div class="blog-card-image">
+                    <img src="https://readdy.ai/api/search-image?query=serverless%2520architecture%2520concept%2520with%2520cloud%2520functions%2520and%2520microservices%2520diagram%252C%2520modern%2520cloud%2520computing%2520visualization%252C%2520blue%2520color%2520scheme%252C%2520high%2520quality%2520professional%2520corporate%2520look&width=600&height=400&seq=17&orientation=landscape" alt="Serverless Architecture" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="px-3 py-1 bg-blue-100 text-primary text-xs font-medium rounded-full">Cloud Solutions</span>
+                        <span class="ml-3 text-gray-500 text-xs">Apr 19, 2025</span>
+                    </div>
+                    <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="block">
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-primary transition-colors">Serverless Computing: When to Use It and How to Implement Effectively</h3>
+                    </a>
+                    <p class="text-gray-600 mb-4 text-sm">An exploration of serverless architecture benefits, use cases, and implementation strategies, with real-world examples of successful serverless applications.</p>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://readdy.ai/api/search-image?query=professional%2520headshot%2520of%2520Indian%2520man%2520in%2520business%2520attire%252C%2520confident%2520expression%252C%2520neutral%2520background%252C%2520high%2520quality%2520professional%2520portrait&width=100&height=100&seq=10&orientation=squarish" alt="Vikram Patel" class="w-8 h-8 rounded-full object-cover object-top mr-3">
+                            <span class="text-gray-700 text-sm">Vikram Patel</span>
+                        </div>
+                        <a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-primary font-medium text-sm hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Insights Section -->
+<section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8">Blog Insights</h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Popular Topics Chart -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Popular Topics</h3>
+                <div id="topicsChart" class="w-full h-80"></div>
+            </div>
+            
+            <!-- Monthly Article Views -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">Monthly Article Views</h3>
+                <div id="viewsChart" class="w-full h-80"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="py-16 bg-primary">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Stay Updated with Our Newsletter</h2>
+            <p class="text-white/90 mb-8">Subscribe to receive the latest insights, trends, and news in IT infrastructure, digital transformation, and cloud solutions.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-3 rounded-lg border-none text-gray-700">
+                <button class="px-6 py-3 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+                    Subscribe Now
+                </button>
+            </div>
+            
+            <p class="text-white/70 text-sm mt-4">We respect your privacy. Unsubscribe at any time.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <div>
+                <a href="#" class="flex items-center space-x-2 mb-6">
+                    <span class="text-3xl font-['Pacifico'] text-white">logo</span>
+                </a>
+                <p class="text-gray-400 mb-6">FRCI Ltd. has been a trusted IT partner for Mauritian businesses since 1989, providing comprehensive IT solutions and services.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-primary transition-colors">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Our Services</h3>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">IT Infrastructure & Security</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Business Applications</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Digital Transformation</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cloud Solutions</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Managed Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Professional Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/f312f409-4628-4132-b25e-67bc0f3b992c" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
+                    <li><a href="https://readdy.ai/home/ebf9240c-e1e1-4e69-9f5e-016f7581c405/49f5790f-8036-4de8-a943-887e92cc9a94" data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Blog & News</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+                <ul class="space-y-4">
+                    <li class="flex">
+                        <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                            <i class="ri-map-pin-line"></i>
+                        </div>
+                        <span class="text-gray-400">The Hub, Cyber City<br>Ebène, Mauritius</span>
+                    </li>
+                    <li class="flex">
+                        <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                            <i class="ri-phone-line"></i>
+                        </div>
+                        <span class="text-gray-400">+230 403 5500</span>
+                    </li>
+                    <li class="flex">
+                        <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                            <i class="ri-mail-line"></i>
+                        </div>
+                        <span class="text-gray-400">info@frci.net</span>
+                    </li>
+                    <li class="flex">
+                        <div class="w-6 h-6 flex items-center justify-center mt-0.5 mr-3 text-primary">
+                            <i class="ri-time-line"></i>
+                        </div>
+                        <span class="text-gray-400">Mon - Fri: 9:00 AM - 5:30 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-gray-400">© 2025 FRCI Ltd. All rights reserved.</p>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Live Chat Widget -->
+<div class="fixed bottom-6 right-6 z-50">
+    <button class="w-16 h-16 bg-primary rounded-full shadow-lg flex items-center justify-center hover:bg-primary/90 transition-colors">
+        <i class="ri-message-3-line ri-xl text-white"></i>
+    </button>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle functionality
+    const menuButton = document.querySelector('.md\\:hidden');
+    const mobileMenu = document.querySelector('.md\\:flex');
+    if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('w-full');
+            mobileMenu.classList.toggle('bg-white');
+            mobileMenu.classList.toggle('p-4');
+            mobileMenu.classList.toggle('shadow-md');
+            mobileMenu.classList.toggle('z-50');
+        });
+    }
+    
+    // Category tabs functionality
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            categoryTabs.forEach(t => t.classList.remove('active', 'bg-primary', 'text-white'));
+            categoryTabs.forEach(t => t.classList.add('bg-gray-200', 'text-gray-700'));
+            this.classList.add('active', 'bg-primary', 'text-white');
+            this.classList.remove('bg-gray-200', 'text-gray-700');
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Topics Chart
+    const topicsChart = echarts.init(document.getElementById('topicsChart'));
+    const topicsOption = {
+        animation: false,
+        tooltip: {
+            trigger: 'item',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+            borderColor: '#eee',
+            borderWidth: 1,
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        legend: {
+            orient: 'vertical',
+            right: 10,
+            top: 'center',
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        series: [
+            {
+                name: 'Article Topics',
+                type: 'pie',
+                radius: ['40%', '70%'],
+                avoidLabelOverlap: false,
+                itemStyle: {
+                    borderRadius: 8,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: false
+                },
+                emphasis: {
+                    label: {
+                        show: false
+                    }
+                },
+                labelLine: {
+                    show: false
+                },
+                data: [
+                    { value: 35, name: 'Cloud Solutions', itemStyle: { color: 'rgba(87, 181, 231, 1)' } },
+                    { value: 30, name: 'Digital Transformation', itemStyle: { color: 'rgba(141, 211, 199, 1)' } },
+                    { value: 25, name: 'IT Infrastructure', itemStyle: { color: 'rgba(251, 191, 114, 1)' } },
+                    { value: 10, name: 'Cybersecurity', itemStyle: { color: 'rgba(252, 141, 98, 1)' } }
+                ]
+            }
+        ]
+    };
+    topicsChart.setOption(topicsOption);
+
+    // Views Chart
+    const viewsChart = echarts.init(document.getElementById('viewsChart'));
+    const viewsOption = {
+        animation: false,
+        tooltip: {
+            trigger: 'axis',
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+            borderColor: '#eee',
+            borderWidth: 1,
+            textStyle: {
+                color: '#1f2937'
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: ['Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May'],
+            axisLine: {
+                lineStyle: {
+                    color: '#ddd'
+                }
+            },
+            axisLabel: {
+                color: '#1f2937'
+            }
+        },
+        yAxis: {
+            type: 'value',
+            axisLine: {
+                lineStyle: {
+                    color: '#ddd'
+                }
+            },
+            axisLabel: {
+                color: '#1f2937'
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#eee'
+                }
+            }
+        },
+        series: [
+            {
+                name: 'Article Views',
+                type: 'line',
+                smooth: true,
+                lineStyle: {
+                    width: 3,
+                    color: 'rgba(87, 181, 231, 1)'
+                },
+                areaStyle: {
+                    color: {
+                        type: 'linear',
+                        x: 0,
+                        y: 0,
+                        x2: 0,
+                        y2: 1,
+                        colorStops: [{
+                            offset: 0, color: 'rgba(87, 181, 231, 0.2)'
+                        }, {
+                            offset: 1, color: 'rgba(87, 181, 231, 0.05)'
+                        }]
+                    }
+                },
+                emphasis: {
+                    focus: 'series'
+                },
+                data: [3200, 4500, 5800, 7200, 8400, 9600, 12000]
+            }
+        ]
+    };
+    viewsChart.setOption(viewsOption);
+
+    // Resize charts when window size changes
+    window.addEventListener('resize', function() {
+        topicsChart.resize();
+        viewsChart.resize();
+    });
+});
+</script>
+</body>
+</html>
